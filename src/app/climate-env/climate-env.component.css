@@ -1,0 +1,26 @@
+.climate-env {
+    background-color: #6D7FCC;
+    color: white;
+    padding: 20px;
+  }
+  
+  .climate-env .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .climate-env h1 {
+    text-align: center;
+  }
+  
+  .content-section {
+    margin-bottom: 20px;
+  }
+  
+  .content-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,25 @@
+<div class="row d-flex justify-content-center mt-100 mb-100">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body text-center">
+                <h4 class="card-title">Ressources</h4>
+            </div>
+            <div class="comment-widgets">
+                <!-- Comment Row -->
+         
+            
+                <div class="d-flex flex-row comment-row m-t-0" *ngFor="let ressourcee of ressource">
+                    <div class="comment-text w-100">
+                        <h6 class="font-medium"> Titre :{{ressourcee?.titre}}</h6> 
+                       <span class="m-b-15 d-block">  Description :{{ressourcee?.description}}</span>
+                        <a href="{{ ressourcee?.lien }}" target="_blank" class="m-b-15 d-block">Ressource : {{ ressourcee?.lien }}</a>
+                        <div class="comment-footer"> <span class="text-muted float-right">{{ressourcee?.dateCreaction}}</span> 
+                            <button type="button" (click)="editRessources(ressourcee)"class="btn btn-cyan btn-sm">Edit</button> 
+                            <button type="button" (click)="onDeleteRessources(ressourcee.id)" class="btn btn-danger btn-sm">Delete</button> </div>
+                    </div>
+                </div> <!-- Comment Row -->
+             
+            </div> <!-- Card -->
+        </div>
+    </div>
+</div>

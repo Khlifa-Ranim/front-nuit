@@ -1,0 +1,69 @@
+<section class="vh-100" style="background-color: #6D7FCC;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-9">
+  
+          <h2 class="text-white mb-4">Ajouter une ressource</h2>
+  
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body">
+              <form #addForm="ngForm">
+  
+                <!-- Title input -->
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Titre</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" [(ngModel)]="titre" name="titre" class="form-control form-control-lg" />
+                  </div>
+                </div>
+  
+                <hr class="mx-n3">
+  
+                <!-- Description input -->
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Ajouter une description :</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <textarea class="form-control" rows="3" [(ngModel)]="description" name="description" placeholder="Message sent to the employer"></textarea>
+                  </div>
+                </div>
+  
+                <!-- Link input -->
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Lien</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input type="text" [(ngModel)]="lien" name="lien" class="form-control form-control-lg" placeholder="http://..." />
+                  </div>
+                </div>
+  
+                <!-- Date input -->
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+                    <h6 class="mb-0">Date</h6>
+                  </div>
+                  <div class="col-md-9 pe-5">
+                    <input class="form-control form-control-lg" [(ngModel)]="dateCreaction" name="dateCreaction" type="date" />
+                  </div>
+                </div>
+  
+                <hr class="mx-n3">
+  
+                <!-- Submit button -->
+                <div class="px-5 py-4">
+                  <button type="submit" class="btn btn-primary btn-lg" (click)="onAddRessource(addForm)">Ajouter</button>
+                </div>
+  
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
